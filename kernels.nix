@@ -6,84 +6,13 @@ _: {
     in
     {
       kernelsu = {
-        amazon-fire-hd-karnak = {
-          anyKernelVariant = "osm0sis";
-          kernelSU.enable = false;
-          kernelDefconfigs = [ "lineageos_karnak_defconfig" ];
-          kernelImageName = "Image.gz-dtb";
-          kernelMakeFlags = [
-            "KCFLAGS=\"-w\""
-            "KCPPFLAGS=\"-w\""
-          ];
-          kernelSrc = sources.linux-amazon-karnak.src;
-          oemBootImg = boot/amazon-fire-hd-karnak.img;
-        };
-
-        moto-rtwo-lineageos-21 = {
-          anyKernelVariant = "kernelsu";
-          clangVersion = "latest";
-
-          kernelSU.variant = "next";
-          susfs = {
-            enable = true;
-            inherit (sources.susfs-android13-5_15) src;
-            kernelsuPatch = "${sources.wildplus-kernel-patches.src}/KernelSU-Next-Implement-SUSFS-v1.5.5-Universal.patch";
-          };
-
-          kernelDefconfigs = [
-            "gki_defconfig"
-            "vendor/kalama_GKI.config"
-            "vendor/ext_config/moto-kalama.config"
-            "vendor/ext_config/moto-kalama-gki.config"
-            "vendor/ext_config/moto-kalama-rtwo.config"
-          ];
-          kernelImageName = "Image";
-          kernelMakeFlags = [
-            "KCFLAGS=\"-w\""
-            "KCPPFLAGS=\"-w\""
-          ];
-          kernelPatches = [
-            "${sources.wildplus-kernel-patches.src}/69_hide_stuff.patch"
-          ];
-          kernelSrc = sources.linux-moto-rtwo-lineageos-21.src;
-        };
-
-        moto-rtwo-lineageos-22_1 = {
-          anyKernelVariant = "kernelsu";
-          clangVersion = "latest";
-
-          kernelSU.variant = "next";
-          susfs = {
-            enable = true;
-            inherit (sources.susfs-android13-5_15) src;
-            kernelsuPatch = "${sources.wildplus-kernel-patches.src}/KernelSU-Next-Implement-SUSFS-v1.5.5-Universal.patch";
-          };
-
-          kernelDefconfigs = [
-            "gki_defconfig"
-            "vendor/kalama_GKI.config"
-            "vendor/ext_config/moto-kalama.config"
-            "vendor/ext_config/moto-kalama-gki.config"
-            "vendor/ext_config/moto-kalama-rtwo.config"
-          ];
-          kernelImageName = "Image";
-          kernelMakeFlags = [
-            "KCFLAGS=\"-w\""
-            "KCPPFLAGS=\"-w\""
-          ];
-          kernelPatches = [
-            "${sources.wildplus-kernel-patches.src}/69_hide_stuff.patch"
-          ];
-          kernelSrc = sources.linux-moto-rtwo-lineageos-22_1.src;
-        };
-
-        oneplus-8t-blu-spark = {
+        redmi_note_9_pro = {
           anyKernelVariant = "osm0sis";
           clangVersion = "latest";
           kernelSU.variant = "next";
-          kernelDefconfigs = [ "blu_spark_defconfig" ];
+          kernelDefconfigs = [ "vendor/gauguin_user_defconfig" ];
           kernelImageName = "Image";
-          kernelSrc = sources.linux-oneplus-8t-blu-spark.src;
+          kernelSrc = sources.linux-redmi_note_9_pro.src; # sources.linux-oneplus-8t-blu-spark.src
           kernelConfig = ''
             CONFIG_STACKPROTECTOR=n
             CONFIG_LTO_CLANG=y
