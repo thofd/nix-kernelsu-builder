@@ -153,11 +153,11 @@
         },
         "version": "11872"
     },
-    "linux-amazon-karnak": {
+    "linux-redmi_note_9_pro": {
         "cargoLocks": null,
-        "date": "2023-10-09",
+        "date": "2024-07-05",
         "extract": null,
-        "name": "linux-amazon-karnak",
+        "name": "linux-redmi_note_9_pro",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -165,77 +165,14 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "mt8163",
-            "repo": "android_kernel_amazon_karnak_4.9",
-            "rev": "e22c713c7c4f0c8d08267f6bba98b8c4cde8310f",
-            "sha256": "sha256-viqlQBPd2SuiAphFKiwjtckC3gDTGkbLv2dgZKMP3Oc=",
+            "owner": "thofd",
+            "repo": "neko_kernel_xiaomi_gauguin",
+            "rev": "013e817ff756092752d83aa613858f704490810c",
+            "sha256": "sha256-Soo5zp8X+yw4rLYAN6jdP2lvvSYhSY4bVOovcViGxjk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e22c713c7c4f0c8d08267f6bba98b8c4cde8310f"
-    },
-    "linux-moto-rtwo-lineageos-21": {
-        "cargoLocks": null,
-        "date": "2024-12-21",
-        "extract": null,
-        "name": "linux-moto-rtwo-lineageos-21",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "LineageOS",
-            "repo": "android_kernel_motorola_sm8550",
-            "rev": "1bdeb4f5c8d2b98ef5f2bedaa5d704032dffd676",
-            "sha256": "sha256-ZK/DH5N5LdkLe48cANESjw1x74aXoZLFoMAwEDvzEk4=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "1bdeb4f5c8d2b98ef5f2bedaa5d704032dffd676"
-    },
-    "linux-moto-rtwo-lineageos-22_1": {
-        "cargoLocks": null,
-        "date": "2025-01-12",
-        "extract": null,
-        "name": "linux-moto-rtwo-lineageos-22_1",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "LineageOS",
-            "repo": "android_kernel_motorola_sm8550",
-            "rev": "8752a2ee05d02f80998b515158b1f41ca1b623f6",
-            "sha256": "sha256-TAyxsYM8wzYVJDc5o5OzCgAI9alN4IbmhUbPfIg+VNg=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "8752a2ee05d02f80998b515158b1f41ca1b623f6"
-    },
-    "linux-oneplus-8t-blu-spark": {
-        "cargoLocks": null,
-        "date": "2024-12-26",
-        "extract": null,
-        "name": "linux-oneplus-8t-blu-spark",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "engstk",
-            "repo": "op8",
-            "rev": "64c109e3f3ba97fa7aed730ab7b4238b91df028b",
-            "sha256": "sha256-KWLtY7KWhHmk6LVYpvIz6XT93+yjteex/250crk9Lxw=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "64c109e3f3ba97fa7aed730ab7b4238b91df028b"
+        "version": "013e817ff756092752d83aa613858f704490810c"
     },
     "susfs-android13-5_15": {
         "cargoLocks": null,
@@ -249,17 +186,17 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "eeb4737559da1321d0f121f1b3aa75ae9567075a",
-            "sha256": "sha256-rWXdmb2vt7V6stfSb2+NoYUgtkc7cC3eyZcw9E9bVok=",
+            "rev": "001e69919c6271f690fd00b17e4c721c9e599152",
+            "sha256": "sha256-j4OIvgOE64nm67NyGsEnSRNygVVZaF5uhMx8ju+p6fQ=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/simonpunk/susfs4ksu.git"
         },
-        "version": "eeb4737559da1321d0f121f1b3aa75ae9567075a"
+        "version": "001e69919c6271f690fd00b17e4c721c9e599152"
     },
     "wildplus-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-03-02",
+        "date": "2025-03-04",
         "extract": null,
         "name": "wildplus-kernel-patches",
         "passthru": null,
@@ -271,11 +208,11 @@
             "name": null,
             "owner": "WildPlusKernel",
             "repo": "kernel_patches",
-            "rev": "cbc169cb159cf5d11b9c402db74898d53766449d",
-            "sha256": "sha256-ikC50g77+/F14BoPDwv9NFBcwoQg2DAcrLFJHdJ/4PI=",
+            "rev": "93870a80959768feb280cac61323b2e7ab1f8a1b",
+            "sha256": "sha256-lGmYI3SY/C2JgT90cPGdl2zSJOQ+N/cjZ6gqLtqgODc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "cbc169cb159cf5d11b9c402db74898d53766449d"
+        "version": "93870a80959768feb280cac61323b2e7ab1f8a1b"
     }
 }

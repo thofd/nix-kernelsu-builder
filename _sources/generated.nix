@@ -91,78 +91,42 @@
       sha256 = "sha256-6o+sfGX7WJsNU1YPUlH3T56bJDR43Laz6nm142RJyNk=";
     };
   };
-  linux-amazon-karnak = {
-    pname = "linux-amazon-karnak";
-    version = "e22c713c7c4f0c8d08267f6bba98b8c4cde8310f";
+  linux-redmi_note_9_pro = {
+    pname = "linux-redmi_note_9_pro";
+    version = "013e817ff756092752d83aa613858f704490810c";
     src = fetchFromGitHub {
-      owner = "mt8163";
-      repo = "android_kernel_amazon_karnak_4.9";
-      rev = "e22c713c7c4f0c8d08267f6bba98b8c4cde8310f";
+      owner = "thofd";
+      repo = "neko_kernel_xiaomi_gauguin";
+      rev = "013e817ff756092752d83aa613858f704490810c";
       fetchSubmodules = false;
-      sha256 = "sha256-viqlQBPd2SuiAphFKiwjtckC3gDTGkbLv2dgZKMP3Oc=";
+      sha256 = "sha256-Soo5zp8X+yw4rLYAN6jdP2lvvSYhSY4bVOovcViGxjk=";
     };
-    date = "2023-10-09";
-  };
-  linux-moto-rtwo-lineageos-21 = {
-    pname = "linux-moto-rtwo-lineageos-21";
-    version = "1bdeb4f5c8d2b98ef5f2bedaa5d704032dffd676";
-    src = fetchFromGitHub {
-      owner = "LineageOS";
-      repo = "android_kernel_motorola_sm8550";
-      rev = "1bdeb4f5c8d2b98ef5f2bedaa5d704032dffd676";
-      fetchSubmodules = false;
-      sha256 = "sha256-ZK/DH5N5LdkLe48cANESjw1x74aXoZLFoMAwEDvzEk4=";
-    };
-    date = "2024-12-21";
-  };
-  linux-moto-rtwo-lineageos-22_1 = {
-    pname = "linux-moto-rtwo-lineageos-22_1";
-    version = "8752a2ee05d02f80998b515158b1f41ca1b623f6";
-    src = fetchFromGitHub {
-      owner = "LineageOS";
-      repo = "android_kernel_motorola_sm8550";
-      rev = "8752a2ee05d02f80998b515158b1f41ca1b623f6";
-      fetchSubmodules = false;
-      sha256 = "sha256-TAyxsYM8wzYVJDc5o5OzCgAI9alN4IbmhUbPfIg+VNg=";
-    };
-    date = "2025-01-12";
-  };
-  linux-oneplus-8t-blu-spark = {
-    pname = "linux-oneplus-8t-blu-spark";
-    version = "64c109e3f3ba97fa7aed730ab7b4238b91df028b";
-    src = fetchFromGitHub {
-      owner = "engstk";
-      repo = "op8";
-      rev = "64c109e3f3ba97fa7aed730ab7b4238b91df028b";
-      fetchSubmodules = false;
-      sha256 = "sha256-KWLtY7KWhHmk6LVYpvIz6XT93+yjteex/250crk9Lxw=";
-    };
-    date = "2024-12-26";
+    date = "2024-07-05";
   };
   susfs-android13-5_15 = {
     pname = "susfs-android13-5_15";
-    version = "eeb4737559da1321d0f121f1b3aa75ae9567075a";
+    version = "001e69919c6271f690fd00b17e4c721c9e599152";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "eeb4737559da1321d0f121f1b3aa75ae9567075a";
+      rev = "001e69919c6271f690fd00b17e4c721c9e599152";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-rWXdmb2vt7V6stfSb2+NoYUgtkc7cC3eyZcw9E9bVok=";
+      sha256 = "sha256-j4OIvgOE64nm67NyGsEnSRNygVVZaF5uhMx8ju+p6fQ=";
     };
     date = "2025-02-23";
   };
   wildplus-kernel-patches = {
     pname = "wildplus-kernel-patches";
-    version = "cbc169cb159cf5d11b9c402db74898d53766449d";
+    version = "93870a80959768feb280cac61323b2e7ab1f8a1b";
     src = fetchFromGitHub {
       owner = "WildPlusKernel";
       repo = "kernel_patches";
-      rev = "cbc169cb159cf5d11b9c402db74898d53766449d";
+      rev = "93870a80959768feb280cac61323b2e7ab1f8a1b";
       fetchSubmodules = false;
-      sha256 = "sha256-ikC50g77+/F14BoPDwv9NFBcwoQg2DAcrLFJHdJ/4PI=";
+      sha256 = "sha256-lGmYI3SY/C2JgT90cPGdl2zSJOQ+N/cjZ6gqLtqgODc=";
     };
-    date = "2025-03-02";
+    date = "2025-03-04";
   };
 }
