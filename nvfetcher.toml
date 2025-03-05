@@ -35,7 +35,7 @@ src.git = "https://github.com/thofd/neko_kernel_xiaomi_gauguin.git"
 src.branch = "main"
 fetch.github = "thofd/neko_kernel_xiaomi_gauguin"
 
-[susfs-android13-5_15]
+[susfs-kernel-4.19]
 src.git = "https://gitlab.com/simonpunk/susfs4ksu.git"
 src.branch = "kernel-4.19"
 fetch.git = "https://gitlab.com/simonpunk/susfs4ksu.git"
